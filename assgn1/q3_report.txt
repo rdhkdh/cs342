@@ -1,0 +1,13 @@
+Q(1) Start your TCP client application without the TCP server running. What happens? Why?
+Ans(1) The following error is displayed- 'Connection failed: Connection refused.' TCP protocol 
+requires that each client makes a connection to the server, and does not allow data transfer till then.
+In this way there is no loss of packets. Therefore the connection fails when client is started without server running.
+
+Q(2) Start your UDP client application without the UDP server running. What happens? Why?
+
+Ans(2) No error is displayed. The client program starts running even if it has not connected to server. 
+It accepts the first expression but does not return any output. In UDP, the client does not form a 
+connection with the server like in TCP and instead sends a datagram. Similarly, the server need not 
+accept a connection and just waits for datagrams to arrive. Datagrams upon arrival contain the address 
+of the sender which the server uses to send data to the correct client. UDP is a fire-and-forget protocol 
+that just sends datagrams with no expectation that the other side even receives the datagrams.
