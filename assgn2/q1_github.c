@@ -1,3 +1,6 @@
+// source: https://www.binarytides.com/dns-query-code-in-c-with-linux-sockets/
+// github repo: https://gist.github.com/fffaraz/9d9170b57791c28ccda9255b48315168
+
 //DNS Query Program on Linux
 #include<stdio.h> 
 #include<string.h>    
@@ -118,7 +121,7 @@ void ngethostbyname(unsigned char *host , int query_type)
  
     dest.sin_family = AF_INET;
     dest.sin_port = htons(53);
-    dest.sin_addr.s_addr = inet_addr("172.17.1.1"); //dns servers, put dns_servers[0]
+    dest.sin_addr.s_addr = inet_addr("8.8.8.8"); //dns servers, put dns_servers[0]
  
     //Set the DNS structure to standard queries
     dns = (struct DNS_HEADER *)&buf;

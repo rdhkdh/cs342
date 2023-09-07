@@ -1,0 +1,6 @@
+hostname            IP                  Remarks
+www.google.com      0.0.0.0             from airtel net
+                    142.251.36.36       from online IP calculator
+
+www.github.com      20.207.73.82
+www.linuxhints.com      52.20.84.62

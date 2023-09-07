@@ -1,3 +1,5 @@
+// gives direct IP address from hostname using in-built library netdb.h
+
 #include<netdb.h>
 #include<stdio.h>
 #include<string.h>

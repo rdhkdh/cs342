@@ -1,10 +1,12 @@
+//not working at all
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 #include <arpa/inet.h>
 
-#define DNS_SERVER "172.17.1.1" //change to "8.8.8.8"
+#define DNS_SERVER "8.8.8.8" //change to "8.8.8.8" for your net, "172.17.1.1" for IITG net
 #define DNS_PORT 53
 
 // Structure for the DNS header
